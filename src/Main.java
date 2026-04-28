@@ -52,6 +52,12 @@ public class Main {
             System.out.println(e.getKey() + ", salario -> $" +e.getValue());
         }
 
+        directorio.replace("Juan", 15000.0);
+        for ( Map.Entry<String, Double> e : directorio.entrySet()){
+            System.out.println(e.getKey() + ", salario -> $" +e.getValue());
+        }
+
+
 
 
 
