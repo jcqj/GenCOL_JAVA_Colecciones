@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     static void main(String[] args) {
@@ -30,6 +27,7 @@ public class Main {
         bibilioteLibros.add("Libro 2");
         bibilioteLibros.add("Libro 3");
         bibilioteLibros.add("Libro 4");
+        bibilioteLibros.add("Libro 4");
         bibilioteLibros.add("Libro 5");
         bibilioteLibros.add("Libro 6");
         bibilioteLibros.add("Libro 7");
@@ -41,6 +39,20 @@ public class Main {
         System.out.println(bibilioteLibros.contains("Libro 3"));
         System.out.println("Las cantidad de libros disponible es: " +bibilioteLibros.size());
         System.out.println("───────────────────────────────────────────────────");
+
+        //! Directorio de Trabajadores:
+
+        Map<String, Double> directorio = new HashMap<>();
+        directorio.put("Juan" , 14000.0);
+        directorio.put("Camilo" , 14000.0);
+        directorio.put("Quevedo" , 14000.0);
+        directorio.put("Jaimes" , 14000.0);
+
+        for ( Map.Entry<String, Double> e : directorio.entrySet()){
+            System.out.println(e.getKey() + ", salario -> $" +e.getValue());
+        }
+
+
 
 
     }
