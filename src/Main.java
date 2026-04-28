@@ -57,6 +57,14 @@ public class Main {
             System.out.println(e.getKey() + ", salario -> $" +e.getValue());
         }
 
+        int totalEmpleados = directorio.size();
+        double promedio = 0;
+        for(Double salarios : directorio.values()){
+//            promedio += salarios;
+            System.out.println(salarios);
+        }
+        promedio = promedio / totalEmpleados;
+        System.out.println("El promedio de los salarios es: " + promedio);
 
 
 
